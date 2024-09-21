@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-deployment-pipeline
+spec:
+  replicas: 1
+  selectors:
+    matchLabels:
+      app: spring-pipeline-pod
+  template:
+    metadata:
+      labels:
+        app: spring-pipeline-pod
+    spec:
+      containers:
+        - name: spring-container
+          image: thanak81/java-homework003-pipeline:CHANGEME
+          ports:
+            - containerPort: 8080
