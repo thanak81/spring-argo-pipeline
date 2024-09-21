@@ -16,4 +16,4 @@ spec:
         - name: spring-container
           image: thanak81/java-homework003-pipeline:1.0.0-10
           ports:
-            - containerPort: 8080
+            - containerPort: 8082
