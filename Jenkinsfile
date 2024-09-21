@@ -3,7 +3,7 @@ pipeline {
         label "jenkins-agent"
     }
     environment {
-        APP_NAME = "spring-argo-pipeline"
+        APP_NAME = "java-homework003-pipeline"
     }
 
     stages {
